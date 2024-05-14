@@ -1,0 +1,13 @@
+nav {
+    background: none;
+}
+
+nav h1 {
+    font-size: 70px;
+}
+
+nav a {
+    font-size: 15px;
+    color: black;
+    font-weight: 100;
+}
