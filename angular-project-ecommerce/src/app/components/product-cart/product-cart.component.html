@@ -1,0 +1,29 @@
+
+<div ngbCollapse class="offcanvas offcanvas-start" id="offcanvasExample" tabindex="-1">
+    <div class="offcanvas-header d-flex text-center">
+      <h5 class="offcanvas-title">Shopping Cart</h5>
+      <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close" (click)="toggleOffcanvas.emit(false)"></button>
+    </div>
+  
+      <div class="offcanvas-body">
+        <ul class="list-group">
+          @for (product of addedProductsList; track product._id) {
+            <li class="list-group-item">{{ product.title }} | {{ product.totalAddedToCart }}
+  
+              <button type="button" class="btn btn-secundary btn-sm" (click)="decrementTotalProduct(product)"><svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" fill="currentColor" class="bi bi-dash-circle" viewBox="0 0 16 16">
+                <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14m0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16"/>
+                <path d="M4 8a.5.5 0 0 1 .5-.5h7a.5.5 0 0 1 0 1h-7A.5.5 0 0 1 4 8"/>
+              </svg></button>
+  
+              <button type="button" class="btn btn-secondary btn-sm" (click)="incrementTotalProduct(product)"><svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" fill="currentColor" class="bi bi-plus-circle" viewBox="0 0 16 16">
+                <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14m0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16"/>
+                <path d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4"/>
+              </svg></button>
+            </li>
+            <hr>
+          } @empty {
+            <li class="list-group-item">The shopping cart is empty!</li>
+          }
+        </ul>
+    </div>
+  </div> 

@@ -6,8 +6,12 @@
   </div>
 </app-header>
 
-<app-products-catalog></app-products-catalog>
+<app-product-cart [productsList]="addedProductsList" (toggleOffcanvas)="toggleOffcanvas($event)"></app-product-cart>
+
+<app-products-catalog (addProductToCart)="addProductToCart($event)"></app-products-catalog>
 
 <app-login></app-login>
+
+<app-create-product></app-create-product>
 
 <router-outlet />

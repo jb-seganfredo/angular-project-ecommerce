@@ -1,10 +1,9 @@
-
 <div class="row">
     @for(product of productsList; track product._id) {
         
         <app-product-card [product]="product" teste="teste" (addProductToCart)="warnAboutAddProductToCart(product)"></app-product-card>
       } @empty {
-        <p>A lista de livros está vazia!</p>
+        <p>The products list is empty</p>
       }
   
       <app-product-card></app-product-card>
