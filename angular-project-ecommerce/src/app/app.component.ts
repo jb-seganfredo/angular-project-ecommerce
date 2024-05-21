@@ -18,7 +18,7 @@ import { CreateProductComponent } from './pages/create-product/create-product.co
 
 export class AppComponent implements OnInit {
 
-  title = 'organic-market';
+  title = 'BRAND';
   addedProductsList: IProduct[] = [];
 
   ngOnInit() {
