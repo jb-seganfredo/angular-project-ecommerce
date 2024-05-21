@@ -1,0 +1,11 @@
+
+<div class="row">
+  @for(product of productsList; track product.id) {
+      
+      <app-product-card [product]="product" teste="teste" (addProductToCart)="warnAboutAddProductToCart(product)"></app-product-card>
+    } @empty {
+      <p>A lista de livros está vazia!</p>
+    }
+
+    <app-product-card></app-product-card>
+</div>
