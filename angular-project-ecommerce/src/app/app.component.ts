@@ -7,11 +7,13 @@ import { ProductCartComponent } from './components/product-cart/product-cart.com
 import { IProduct } from './interfaces/product.interface';
 import { FooterComponent } from './components/footer/footer.component';
 import { CreateProductComponent } from './pages/create-product/create-product.component';
+import { LoginComponent } from './pages/login/login.component';
+import { PageNotFoundComponent } from './pages/page-not-found/page-not-found.component';
 
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [RouterOutlet, HeaderComponent, ProductCardComponent, ProductsCatalogComponent, ProductCartComponent, FooterComponent, CreateProductComponent],
+  imports: [RouterOutlet, HeaderComponent, ProductCardComponent, ProductsCatalogComponent, ProductCartComponent, FooterComponent, CreateProductComponent, LoginComponent, PageNotFoundComponent],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css'
 })
