@@ -11,3 +11,10 @@ button:hover {
         width: 60px;
     }
 }
+
+button {
+    background-color: #f8faf8;
+    border: none;
+    padding: 10px;
+    text-align: left;
+}

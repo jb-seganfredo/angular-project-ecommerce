@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { RouterOutlet } from '@angular/router';
+import { RouterModule, RouterOutlet } from '@angular/router';
 import { HeaderComponent } from './components/header/header.component';
 import { ProductCardComponent } from './components/product-card/product-card.component';
 import { ProductsCatalogComponent } from './pages/products-catalog/products-catalog.component';
@@ -13,7 +13,7 @@ import { PageNotFoundComponent } from './pages/page-not-found/page-not-found.com
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [RouterOutlet, HeaderComponent, ProductCardComponent, ProductsCatalogComponent, ProductCartComponent, FooterComponent, CreateProductComponent, LoginComponent, PageNotFoundComponent],
+  imports: [RouterOutlet, HeaderComponent, ProductCardComponent, ProductsCatalogComponent, ProductCartComponent, FooterComponent, CreateProductComponent, LoginComponent, PageNotFoundComponent, RouterModule],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css'
 })

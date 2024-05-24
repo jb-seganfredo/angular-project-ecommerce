@@ -1,6 +1,9 @@
 <app-header>
 
   <div class="ms-3">
+
+      <button class="m-2" style="text-decoration: none; color: black;" routerLink="/login">Login</button>
+
     <button class="btn primar me-4 rounded" type="button" (click)="toggleOffcanvas(true)">
       Sopping Bag
     </button>
@@ -11,12 +14,6 @@
 <app-product-cart [productsList]="addedProductsList" (toggleOffcanvas)="toggleOffcanvas($event)"></app-product-cart>
 
 <app-products-catalog (addProductToCart)="addProductToCart($event)"></app-products-catalog>
-
-<app-create-product></app-create-product>
-
-<app-login></app-login>
-<app-page-not-found></app-page-not-found>
-<!-- <router-outlet></router-outlet> -->
 
 <app-footer></app-footer>
 
