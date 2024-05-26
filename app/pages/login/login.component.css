@@ -1,0 +1,12 @@
+form {
+    margin: 100px 500px;
+}
+
+form button {
+    border: 1px solid black;
+}
+
+form button:hover {
+    background-color: black;
+    color: white;
+}
