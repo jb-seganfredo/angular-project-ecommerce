@@ -1,0 +1,12 @@
+section {
+    display: flex;
+    gap: 15px;
+    align-items: center;    
+    justify-content: center;
+}
+
+section a {
+    color: black;
+    text-decoration: none;
+    width: 20px;
+}

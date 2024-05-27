@@ -1,0 +1,19 @@
+section {
+    display: flex;
+    gap: 10px;
+    align-items: center;    
+    justify-content: center;
+}
+
+section a {
+    color: black;
+    text-decoration: none;
+    width: 20px;
+}
+
+.text-center {
+    background-color: rgba(0, 0, 0, 0.2);
+  }
+  
+  .text-white{
+      background-color: #8bb38f88}

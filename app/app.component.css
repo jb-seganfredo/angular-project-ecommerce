@@ -1,0 +1,15 @@
+#sidebar-menu {
+    width: 150px;
+}
+
+
+button:hover {
+    background-color: rgb(176, 176, 176);
+    width: 150px;
+}
+
+@media (max-width:576px) {
+    #sidebar-menu {
+        width: 60px;
+    }
+}

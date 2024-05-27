@@ -1,0 +1,20 @@
+#sidebar-menu {
+    width: 150px;
+}
+
+button:hover {
+    background-color: #f8faf8;
+}
+
+@media (max-width:576px) {
+    #sidebar-menu {
+        width: 60px;
+    }
+}
+
+button {
+    background-color: #f8faf8;
+    border: none;
+    padding: 10px;
+    text-align: left;
+}
